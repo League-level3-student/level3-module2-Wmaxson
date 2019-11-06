@@ -1,3 +1,4 @@
+
 package _00_Sorting_Algorithms;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -24,14 +25,23 @@ class _01_SwappingDigits {
 	
 	//1. Complete the method so that the first two elements of the array are swapped
 	public static void swapArrayOfTwo(int[] arr) {
-		
+		 int[] fortnite = {0, 0};
+		 fortnite[0] = arr[1];
+		 fortnite[1] = arr[0];	
+		 System.out.println();
 	}
 	
 	//2. Complete the method so that it sorts the array using a bubble sort.
 	//   Iterate through the array and when you find two elements that are out
 	//   of order, swap them. Repeat this until the array is in order.
 	public static void sortIntArray(int[] arr) {
-		
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i]<arr[i+1]) {
+				System.out.println(i + ", " + (i+1));
+				int[] arr1 = {i, i+1};
+				swapArrayOfTwo(arr1);
+			}
+		}
 	}
 	
 	//3. Complete the method so that it finds the middle number in the array.
