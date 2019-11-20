@@ -25,13 +25,13 @@ public class SelectionSorter extends Sorter {
 				if (array[j]<array[index]) {
 					index=j;
 				}
-				display.updateDisplay();
+				
 			}
 			//5. swap the array element at index with the array element at i
 			int tempint = array[i];
 			array[i]=array[index];
 			array[index]=tempint;
-			
+			display.updateDisplay();
 		}
 			
 			

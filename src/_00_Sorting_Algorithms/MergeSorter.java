@@ -17,17 +17,21 @@ public class MergeSorter extends Sorter {
 	
 	private void mergeSort(int[] array, int low, int high, SortingVisualizer display) {
 		//1. Create a temporary integer array that is the same length as the passed in array.
-		
+		int[] temp = new int[array.length];
 		//2. make an if statement that checks if low is less than high
 		//   and put the rest of the method inside of it
-
+		if (low<high) {
+			
+		
 			//3. Create an integer called middle and set it 
 			//   equal to the half way point between low and high
             
+			int middle = (low+high)/2;
+			
             //4. call the mergeSort method with low and middle
-           
+           mergeSort(array, low, middle, display);
             //5. call the mergeSort method with middle + 1 and high
-            
+           mergeSort(array, middle, high, display); 
             //6. copy the elements from the array into the temporary array,
             //   but only the elements from low to high inclusive
             
@@ -58,7 +62,7 @@ public class MergeSorter extends Sorter {
             	//18. set array at k equal to temp array at i
                 
                 //19. increase k and i by 1
-               
+		}
             
         
 	}
