@@ -13,10 +13,9 @@ public class QuickSorter extends Sorter {
 	@Override
 	void sort(int[] array, SortingVisualizer display) {
 		//10. call the quickSort method with 0 and the length of the array minus one
-		while(true){
+
 		quickSort(array, 0, array.length-1, display);
-		display.randomizeArray();
-		}
+		
 	}
 	
 	private void quickSort(int[] array, int low, int high, SortingVisualizer display) {
