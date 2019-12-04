@@ -22,6 +22,10 @@ class _04_SearchTest {
 	public void testBinarySearch() {
 		//2. use the assertEquals method to test your binary search method.
 		//   remember that the array must be sorted
+		int[] poopoopeepee = {1, 0};
+		assertEquals(_01_BinarySearch.binarySearch(poopoopeepee, 0, poopoopeepee.length-1, 1), 0);
+		assertEquals(_01_BinarySearch.binarySearch(poopoopeepee, 0, poopoopeepee.length-1, 0), 1);
+		assertEquals(_01_BinarySearch.binarySearch(poopoopeepee, 0, poopoopeepee.length-1, 3), -1);
 	}
 	
 	@Test
@@ -36,3 +40,10 @@ class _04_SearchTest {
 		//   remember that the array must be sorted
 	}
 }
+
+
+
+
+
+
+
