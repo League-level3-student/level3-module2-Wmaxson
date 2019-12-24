@@ -22,7 +22,6 @@ public class BubbleSorter extends Sorter{
 				array[i+1] = arr1[0];
 				System.out.println(array[i]);
 				System.out.println(array[i+1]);
-				
 			}
 		}
 		display.updateDisplay();
